@@ -1,1 +1,387 @@
-{"@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld", "author": "OpenSpending", "bytes": 40682964, "count_of_rows": 251014, "countryCode": "CA", "currencyCode": "CAD", "description": "Alberta Budget", "hash": "b0fc48f1a2a111d90d9e4fcee7b492ad", "model": {"dimensions": {"date": {"attributes": {"time": {"source": "time", "title": "time"}, "time_name": {"source": "time_name", "title": "time_name"}}, "dimensionType": "datetime", "primaryKey": ["time_name", "time"]}, "unknown": {"attributes": {"code": {"source": "code", "title": "code"}, "code1_label": {"labelfor": "code1_name", "source": "code1_label", "title": "code1_label"}, "code1_name": {"source": "code1_name", "title": "code1_name"}, "code2_label": {"labelfor": "code2_name", "source": "code2_label", "title": "code2_label"}, "code2_name": {"source": "code2_name", "title": "code2_name"}, "code3_label": {"labelfor": "code3_name", "source": "code3_label", "title": "code3_label"}, "code3_name": {"source": "code3_name", "title": "code3_name"}, "municipality": {"source": "municipality", "title": "municipality"}, "rowid": {"source": "rowid", "title": "rowid"}, "status": {"source": "status", "title": "status"}, "time_day": {"source": "time_day", "title": "time_day"}, "time_month": {"source": "time_month", "title": "time_month"}, "time_quarter": {"source": "time_quarter", "title": "time_quarter"}, "time_week": {"source": "time_week", "title": "time_week"}, "time_year": {"source": "time_year", "title": "time_year"}, "time_yearmonth": {"source": "time_yearmonth", "title": "time_yearmonth"}}, "dimensionType": "other", "primaryKey": ["status", "code1_name", "code2_name", "code", "municipality", "code3_name", "rowid", "time_year", "time_month", "time_day", "time_week", "time_yearmonth", "time_quarter"]}}, "measures": {"amount": {"currency": "CAD", "source": "amount", "title": "amount"}}}, "name": "__os_imported__alberta_total", "originalName": "alberta_total", "profiles": {"fiscal": "*", "tabular": "*"}, "resources": [{"bytes": 40682964, "count_of_rows": 251014, "dialect": {"delimiter": ",", "doubleQuote": true, "lineTerminator": "\r\n", "quoteChar": "\"", "skipInitialSpace": false}, "encoding": "utf-8", "format": "csv", "hash": "0c258386509c36ee320788405914affd", "mediatype": "text/csv", "name": "__os_imported__alberta_total", "path": "data/__os_imported__alberta_total.csv", "schema": {"fields": [{"conceptType": "unknown", "format": "default", "name": "status", "osType": "unknown:string-1:code", "slug": "status", "title": "status", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code1_name", "osType": "unknown:string-2:code", "slug": "code1_name", "title": "code1_name", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code1_label", "osType": "unknown:string-2:label", "slug": "code1_label", "title": "code1_label", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code2_name", "osType": "unknown:string-3:code", "slug": "code2_name", "title": "code2_name", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code2_label", "osType": "unknown:string-3:label", "slug": "code2_label", "title": "code2_label", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code", "osType": "unknown:string-4:code", "slug": "code", "title": "code", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "municipality", "osType": "unknown:string-5:code", "slug": "municipality", "title": "municipality", "type": "string"}, {"conceptType": "value", "decimalChar": ".", "format": "default", "groupChar": "", "name": "amount", "osType": "value", "slug": "amount", "title": "amount", "type": "number"}, {"conceptType": "unknown", "format": "default", "name": "code3_name", "osType": "unknown:string-6:code", "slug": "code3_name", "title": "code3_name", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "code3_label", "osType": "unknown:string-6:label", "slug": "code3_label", "title": "code3_label", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "rowid", "osType": "unknown:string-7:code", "slug": "rowid", "title": "rowid", "type": "string"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "time_name", "osType": "date:generic", "slug": "time_name", "title": "time_name", "type": "date"}, {"conceptType": "unknown", "format": "default", "name": "time_year", "osType": "unknown:string-8:code", "slug": "time_year", "title": "time_year", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_month", "osType": "unknown:string-9:code", "slug": "time_month", "title": "time_month", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_day", "osType": "unknown:string-10:code", "slug": "time_day", "title": "time_day", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_week", "osType": "unknown:string-11:code", "slug": "time_week", "title": "time_week", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_yearmonth", "osType": "unknown:string-12:code", "slug": "time_yearmonth", "title": "time_yearmonth", "type": "string"}, {"conceptType": "unknown", "format": "default", "name": "time_quarter", "osType": "unknown:string-13:code", "slug": "time_quarter", "title": "time_quarter", "type": "string"}, {"conceptType": "date", "format": "%Y-%m-%d", "name": "time", "osType": "date:generic", "slug": "time", "title": "time", "type": "date"}], "primaryKey": ["status", "code1_name", "code2_name", "code", "municipality", "code3_name", "rowid", "time_name", "time_year", "time_month", "time_day", "time_week", "time_yearmonth", "time_quarter", "time"]}, "profile": "data-resource"}], "sources": [{"title": "14004", "url": "https://www.dropbox.com/s/nt0mtgib9zrs0x1/2006_OS.csv?dl=1"}, {"title": "14001", "url": "https://www.dropbox.com/s/unoa2fu3j2g7kj6/2004_OS.csv?dl=1"}, {"title": "14003", "url": "https://www.dropbox.com/s/u2pa7h4lic03rvv/2005_OS.csv?dl=1"}, {"title": "14005", "url": "https://www.dropbox.com/s/x7kr5q2fue3wc55/2007_OS.csv?dl=1"}, {"title": "14006", "url": "https://www.dropbox.com/s/2y9dnmdx8pw7uvu/2008_OS.csv?dl=1"}, {"title": "14007", "url": "https://www.dropbox.com/s/r3xo2im1p0l4n2j/2009_OS.csv?dl=1"}, {"title": "14008", "url": "https://www.dropbox.com/s/j01izyfjolm9h6t/2010_OS.csv?dl=1"}, {"title": "14009", "url": "https://www.dropbox.com/s/ee4xk8vmfyb0bvb/2011_OS.csv?dl=1"}, {"title": "14011", "url": "https://www.dropbox.com/s/mew72fqtsx6mk0y/2012_OS.csv?dl=1"}, {"title": "14012", "url": "https://www.dropbox.com/s/tgk6yy31sxtwgzi/2013_OS.csv?dl=1"}], "title": "Alberta Budget", "profile": "data-package", "owner": "6018ab87076187018fc29c94a68a3cd2"}
+{
+  "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
+  "author": "OpenSpending",
+  "bytes": 40682964,
+  "count_of_rows": 251014,
+  "countryCode": "CA",
+  "currencyCode": "CAD",
+  "description": "Alberta Budget",
+  "hash": "b0fc48f1a2a111d90d9e4fcee7b492ad",
+  "model": {
+    "dimensions": {
+      "date": {
+        "attributes": {
+          "time": {
+            "source": "time",
+            "title": "time"
+          },
+          "time_name": {
+            "source": "time_name",
+            "title": "time_name"
+          }
+        },
+        "dimensionType": "datetime",
+        "primaryKey": ["time_name", "time"]
+      },
+      "unknown": {
+        "attributes": {
+          "code": {
+            "source": "code",
+            "title": "code"
+          },
+          "code1_label": {
+            "labelfor": "code1_name",
+            "source": "code1_label",
+            "title": "code1_label"
+          },
+          "code1_name": {
+            "source": "code1_name",
+            "title": "code1_name"
+          },
+          "code2_label": {
+            "labelfor": "code2_name",
+            "source": "code2_label",
+            "title": "code2_label"
+          },
+          "code2_name": {
+            "source": "code2_name",
+            "title": "code2_name"
+          },
+          "code3_label": {
+            "labelfor": "code3_name",
+            "source": "code3_label",
+            "title": "code3_label"
+          },
+          "code3_name": {
+            "source": "code3_name",
+            "title": "code3_name"
+          },
+          "municipality": {
+            "source": "municipality",
+            "title": "municipality"
+          },
+          "rowid": {
+            "source": "rowid",
+            "title": "rowid"
+          },
+          "status": {
+            "source": "status",
+            "title": "status"
+          },
+          "time_day": {
+            "source": "time_day",
+            "title": "time_day"
+          },
+          "time_month": {
+            "source": "time_month",
+            "title": "time_month"
+          },
+          "time_quarter": {
+            "source": "time_quarter",
+            "title": "time_quarter"
+          },
+          "time_week": {
+            "source": "time_week",
+            "title": "time_week"
+          },
+          "time_year": {
+            "source": "time_year",
+            "title": "time_year"
+          },
+          "time_yearmonth": {
+            "source": "time_yearmonth",
+            "title": "time_yearmonth"
+          }
+        },
+        "dimensionType": "other",
+        "primaryKey": [
+          "status",
+          "code1_name",
+          "code2_name",
+          "code",
+          "municipality",
+          "code3_name",
+          "rowid",
+          "time_year",
+          "time_month",
+          "time_day",
+          "time_week",
+          "time_yearmonth",
+          "time_quarter"
+        ]
+      }
+    },
+    "measures": {
+      "amount": {
+        "currency": "CAD",
+        "source": "amount",
+        "title": "amount"
+      }
+    }
+  },
+  "name": "__os_imported__alberta_total",
+  "originalName": "alberta_total",
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
+  },
+  "resources": [
+    {
+      "bytes": 40682964,
+      "count_of_rows": 251014,
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "0c258386509c36ee320788405914affd",
+      "mediatype": "text/csv",
+      "name": "__os_imported__alberta_total",
+      "path": "https://storage.openspending.org/alberta-budget/__os_imported__alberta_total.csv",
+      "schema": {
+        "fields": [
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "status",
+            "osType": "unknown:string-1:code",
+            "slug": "status",
+            "title": "status",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code1_name",
+            "osType": "unknown:string-2:code",
+            "slug": "code1_name",
+            "title": "code1_name",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code1_label",
+            "osType": "unknown:string-2:label",
+            "slug": "code1_label",
+            "title": "code1_label",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code2_name",
+            "osType": "unknown:string-3:code",
+            "slug": "code2_name",
+            "title": "code2_name",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code2_label",
+            "osType": "unknown:string-3:label",
+            "slug": "code2_label",
+            "title": "code2_label",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code",
+            "osType": "unknown:string-4:code",
+            "slug": "code",
+            "title": "code",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "municipality",
+            "osType": "unknown:string-5:code",
+            "slug": "municipality",
+            "title": "municipality",
+            "type": "string"
+          },
+          {
+            "conceptType": "value",
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "amount",
+            "osType": "value",
+            "slug": "amount",
+            "title": "amount",
+            "type": "number"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code3_name",
+            "osType": "unknown:string-6:code",
+            "slug": "code3_name",
+            "title": "code3_name",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "code3_label",
+            "osType": "unknown:string-6:label",
+            "slug": "code3_label",
+            "title": "code3_label",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "rowid",
+            "osType": "unknown:string-7:code",
+            "slug": "rowid",
+            "title": "rowid",
+            "type": "string"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "time_name",
+            "osType": "date:generic",
+            "slug": "time_name",
+            "title": "time_name",
+            "type": "date"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_year",
+            "osType": "unknown:string-8:code",
+            "slug": "time_year",
+            "title": "time_year",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_month",
+            "osType": "unknown:string-9:code",
+            "slug": "time_month",
+            "title": "time_month",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_day",
+            "osType": "unknown:string-10:code",
+            "slug": "time_day",
+            "title": "time_day",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_week",
+            "osType": "unknown:string-11:code",
+            "slug": "time_week",
+            "title": "time_week",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_yearmonth",
+            "osType": "unknown:string-12:code",
+            "slug": "time_yearmonth",
+            "title": "time_yearmonth",
+            "type": "string"
+          },
+          {
+            "conceptType": "unknown",
+            "format": "default",
+            "name": "time_quarter",
+            "osType": "unknown:string-13:code",
+            "slug": "time_quarter",
+            "title": "time_quarter",
+            "type": "string"
+          },
+          {
+            "conceptType": "date",
+            "format": "%Y-%m-%d",
+            "name": "time",
+            "osType": "date:generic",
+            "slug": "time",
+            "title": "time",
+            "type": "date"
+          }
+        ],
+        "primaryKey": [
+          "status",
+          "code1_name",
+          "code2_name",
+          "code",
+          "municipality",
+          "code3_name",
+          "rowid",
+          "time_name",
+          "time_year",
+          "time_month",
+          "time_day",
+          "time_week",
+          "time_yearmonth",
+          "time_quarter",
+          "time"
+        ]
+      },
+      "profile": "data-resource"
+    }
+  ],
+  "sources": [
+    {
+      "title": "14004",
+      "url": "https://www.dropbox.com/s/nt0mtgib9zrs0x1/2006_OS.csv?dl=1"
+    },
+    {
+      "title": "14001",
+      "url": "https://www.dropbox.com/s/unoa2fu3j2g7kj6/2004_OS.csv?dl=1"
+    },
+    {
+      "title": "14003",
+      "url": "https://www.dropbox.com/s/u2pa7h4lic03rvv/2005_OS.csv?dl=1"
+    },
+    {
+      "title": "14005",
+      "url": "https://www.dropbox.com/s/x7kr5q2fue3wc55/2007_OS.csv?dl=1"
+    },
+    {
+      "title": "14006",
+      "url": "https://www.dropbox.com/s/2y9dnmdx8pw7uvu/2008_OS.csv?dl=1"
+    },
+    {
+      "title": "14007",
+      "url": "https://www.dropbox.com/s/r3xo2im1p0l4n2j/2009_OS.csv?dl=1"
+    },
+    {
+      "title": "14008",
+      "url": "https://www.dropbox.com/s/j01izyfjolm9h6t/2010_OS.csv?dl=1"
+    },
+    {
+      "title": "14009",
+      "url": "https://www.dropbox.com/s/ee4xk8vmfyb0bvb/2011_OS.csv?dl=1"
+    },
+    {
+      "title": "14011",
+      "url": "https://www.dropbox.com/s/mew72fqtsx6mk0y/2012_OS.csv?dl=1"
+    },
+    {
+      "title": "14012",
+      "url": "https://www.dropbox.com/s/tgk6yy31sxtwgzi/2013_OS.csv?dl=1"
+    }
+  ],
+  "title": "Alberta Budget",
+  "profile": "data-package",
+  "owner": "6018ab87076187018fc29c94a68a3cd2"
+}
