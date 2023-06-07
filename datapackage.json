@@ -4,6 +4,10 @@
   "bytes": 40682964,
   "count_of_rows": 251014,
   "countryCode": "CA",
+  "fiscalPeriod": {
+  	"start": "2004-01-01",
+	  "end": "2013-12-31"
+  },
   "currencyCode": "CAD",
   "description": "Alberta Budget",
   "hash": "b0fc48f1a2a111d90d9e4fcee7b492ad",
